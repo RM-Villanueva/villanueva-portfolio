@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villanueva - Table Col/Rowspan</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="activity5.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#" class="active">Activities</a>
+                    <div>
+                        <a href="activity1.html">1 - Eye of the Tiger</a>
+                        <a href="activity2.html">2 - Resume w/o Lists</a>
+                        <a href="activity3.html">3 - Resume w/ Lists</a>
+                        <a href="activity4.html">4 - Map Area</a>
+                        <a href="activity5.html" class="active">5 - Table Col/Rowspan</a>
+                        <a href="activity6.html">6 - Calendar w/o Div</a>
+                        <a href="activity7.html">7 - Calendar w/ Div</a>
+                        <a href="activity8.html">8 - NU Quest</a>
+                        <a href="activity9.html">9 - Nav/Anim/Transition</a>
+                    </div>
+                </li>
+                <li><a href="https://rm-villanueva.github.io/villanueva-rayshawn/">DailyGlobe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Activity 5-->
+    <h1 class="page-heading">Colspan & Rowspan</h1>
+
+    <table>
+        <tr>
+            <td colspan="3">1</td>
+            <td rowspan="2">2</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="3">7</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td colspan="5">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td rowspan="2">6</td>
+            <td colspan="3">7</td>
+            <td rowspan="2">8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td colspan="3">10</td>
+        </tr>
+        <tr>
+            <td colspan="3">11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>&copy; 2025 Rayshawn Villanueva. All rights reserved.</p>
+    </footer>
+</body>
+</html>

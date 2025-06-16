@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villanueva - NU Quest</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="activity8.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#" class="active">Activities</a>
+                    <div>
+                        <a href="activity1.html">1 - Eye of the Tiger</a>
+                        <a href="activity2.html">2 - Resume w/o Lists</a>
+                        <a href="activity3.html">3 - Resume w/ Lists</a>
+                        <a href="activity4.html">4 - Map Area</a>
+                        <a href="activity5.html">5 - Table Col/Rowspan</a>
+                        <a href="activity6.html">6 - Calendar w/o Div</a>
+                        <a href="activity7.html">7 - Calendar w/ Div</a>
+                        <a href="activity8.html" class="active">8 - NU Quest</a>
+                        <a href="activity9.html">9 - Nav/Anim/Transition</a>
+                    </div>
+                </li>
+                <li><a href="https://rm-villanueva.github.io/villanueva-rayshawn/">DailyGlobe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Activity 8-->
+    <h1 class="page-heading">NU Quest</h1>
+
+    <form action="createyouraccounts.html" method="get">
+        <h1>Online Application</h1>
+        <p>Reminder: Please provide your correct and complete information. Fields marked with asterisk (*) are required.
+        </p>
+
+        <h3>Application Term & Course/Strand</h3>
+        <label for="campus"><span class="label-text">Campus:</span><span class="important">*</span></label><br>
+        <select name="campus" id="campus" required><br>
+            <optgroup label="National Capital Region (NCR)">
+                <option value="a1">NU Manila</option>
+                <option value="a2">NU Fairview</option>
+                <option value="a3">NU MOA</option>
+                <option value="a4">NU East Ortigas</option>
+                <option value="a5">NU Las Pinas</option>
+            </optgroup>
+            <optgroup label="Region III (Central Luzon)">
+                <option value="b1">NU Baliwag</option>
+                <option value="b2">NU Clark</option>
+            </optgroup>
+            <optgroup label="Region IV-A (CALABARZON)">
+                <option value="c1">NU Laguna</option>
+                <option value="c2">NU Dasmarinas</option>
+                <option value="c3">NU Lipa</option>
+            </optgroup>
+            <optgroup label="Region VI (Western Visayas)">
+                <option value="d1">NU Bacolod</option>
+            </optgroup>
+            <optgroup label="Region VII (Central Visayas)">
+                <option value="e1">NU Cebu</option>
+            </optgroup>
+        </select>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="year"><span class="label-text">Academic Year:</span><span class="important">*</span></label>
+                <input list="year" name="year" required>
+                <datalist id="year">
+                    <option>2025 - 2026</option>
+                    <option>2026 - 2027</option>
+                    <option>2027 - 2028</option>
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="term"><span class="label-text">Academic Term:</span><span class="important">*</span></label>
+                <input list="term" name="term" required>
+                <datalist id="term">
+                    <option>1st</option>
+                    <option>2nd</option>
+                    <option>3rd</option>
+                </datalist>
+            </div>
+        </div>
+
+        <label for="apply"><span class="label-text">Applying For:</span><span class="important">*</span></label><br>
+        <select name="apply" id="apply" required><br>
+            <optgroup label="Basic Education">
+                <option value="a1">SHS</option>
+            </optgroup>
+            <optgroup label="Higher Education">
+                <option value="b1">Freshman</option>
+                <option value="b2">Transferee</option>
+                <option value="b3">Second Degree Taker</option>
+                <option value="b4">Cross Enrollee</option>
+                <option value="b5">Graduate Studies</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <label for="prog"><span class="label-text">Academic Program:</span><span class="important">*</span></label><br>
+        <select name="prog" id="prog" required><br>
+            <optgroup label="Senior High School">
+                <option value="a1">ABM - Accountancy, Business, and Management</option>
+                <option value="a2">HUMSS - Humanities and Social Sciences</option>
+                <option value="a3">STEM - Science, Technology, Engineering, and Mathematics</option>
+            </optgroup>
+            <optgroup label="School of Education, Arts, and Sciences (SEAS)">
+                <option value="b1">BAComm - Bachelor of Arts in Communication</option>
+                <option value="b2">BAComm - Bachelor of Arts in Communication</option>
+                <option value="b3">BAPolSci - Bachelor of Arts in Political Science</option>
+                <option value="b4">BSMT - Bachelor of Science in Medical Technology</option>
+                <option value="b5">BSPsy - Bachelor of Science in Psychology</option>
+            </optgroup>
+            <optgroup label="School of Accountancy, Business, and Management (SABM)">
+                <option value="c1">BSAccountancy - Bachelor of Science in Accountancy</option>
+                <option value="c2">BSBA - Bachelor of Science in Business Administration</option>
+                <option value="c3">BSMA - Bachelor of Science in Management Accounting</option>
+                <option value="c4">BSTM - Bachelor of Science in Tourism Management</option>
+            </optgroup>
+            <optgroup label="School of Engineering, Architecture, and Technology (SEAT)">
+                <option value="d1">BSArch - Bachelor of Science in Architecture</option>
+                <option value="c1">BSCE - Bachelor of Science in Civil Engineering</option>
+                <option value="c1">BSCpE - Bachelor of Science in Computer Engineering</option>
+                <option value="c1">BSIT - Bachelor of Science in Information Technology</option>
+            </optgroup>
+            <optgroup label="Academic Office (ACAD)">
+                <option value="e1">DMD - Doctor of Dental Medicine</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <h3>Basic Information</h3>
+        <label for="fname"><span class="label-text">First Name:</span><span class="important">*</span></label><br>
+        <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
+
+        <label for="mname"><span class="label-text">Middle Name:</span></label><br>
+        <input type="text" id="mname" name="mname" placeholder="Leave it blank if not applicable"><br>
+
+        <label for="lname"><span class="label-text">Last Name:</span><span class="important">*</span></label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+
+        <label for="date"><span class="label-text">Date of Birth:</span><span class="important">*</span></label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="email"><span class="label-text">Email Address:</span><span class="important">*</span></label><br>
+        <input type="email" id="email" name="email" placeholder="name@email.com" required><br>
+
+        <label for="phone"><span class="label-text">Phone Number:</span><span class="important">*</span></label><br>
+        <input type="tel" id="phone" name="phone" placeholder="(09) 12345-6789" required><br>
+
+        <label for="nat"><span class="label-text">Nationality:</span><span class="important">*</span></label><br>
+        <input list="nat" name="nat" required><br>
+        <datalist id="nat">
+            <option>Filipino</option>
+            <option>Afghan</option>
+            <option>Aland Islands</option>
+            <option>Albanian</option>
+            <option>Algerian</option>
+        </datalist>
+
+        <div class="privacy-container">
+            <h3>Data Privacy Agreement</h3>
+            <p>By accomplishing this form, I hereby authorize National University to retain, process, disseminate, and
+                use for research purposes all the personal data that I provided. I understand and give consent to
+                National University to use these information to communicate with me either via post, telephone, mobile
+                text, email, or other way possible. In the event that I do not wish to be contacted further, I shall
+                inform the University accordingly.</p>
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">I agree to the Data Privacy Agreement</label>
+        </div>
+
+        <br>
+
+        <input type="submit" value="Create Account"> <input type="button" value="Cancel">
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Rayshawn Villanueva. All rights reserved.</p>
+    </footer>
+</body>
+</html>

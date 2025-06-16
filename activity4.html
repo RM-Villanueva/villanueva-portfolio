@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villanueva - Map Area</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="activity4.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#" class="active">Activities</a>
+                    <div>
+                        <a href="activity1.html">1 - Eye of the Tiger</a>
+                        <a href="activity2.html">2 - Resume w/o Lists</a>
+                        <a href="activity3.html">3 - Resume w/ Lists</a>
+                        <a href="activity4.html" class="active">4 - Map Area</a>
+                        <a href="activity5.html">5 - Table Col/Rowspan</a>
+                        <a href="activity6.html">6 - Calendar w/o Div</a>
+                        <a href="activity7.html">7 - Calendar w/ Div</a>
+                        <a href="activity8.html">8 - NU Quest</a>
+                        <a href="activity9.html">9 - Nav/Anim/Transition</a>
+                    </div>
+                </li>
+                <li><a href="https://rm-villanueva.github.io/villanueva-rayshawn/">DailyGlobe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Activity 4-->
+    <h1 class="page-heading">Click-A-Cake!</h1>
+    <h2>Welcome Back! This is a webpage of clickable CAKES!</h2>
+    <p>
+        Let's play a little game, one of these cakes is a lie (this is NOT referencing a popular game).
+        These cakes are alive and can speak! You must choose which cake is telling the truth and the others tell lies.
+    </p>
+    <br>
+    <pre>
+My Question for YOU is: what does <strong>HTML</strong> stand for?
+
+<strong>HolidayCoffeeCake:</strong> it is Howard's Text Marking Lands!
+<strong>TripleChocolateCake:</strong> it is HyperText Markup Language!
+<strong>AppleBerryCake:</strong> it is Holiday To My Lads!
+    </pre>
+    <br>
+
+    <img src="../images/activity4.jpg" alt="This is a picture of clickable cakes" usemap="#clickcakes">
+    <map name="clickcakes">
+
+        <area shape="poly"
+            coords="248,169,214,195,221,320,253,345,324,359,451,359,525,345,563,323,568,195,542,169,455,156,338,153"
+            alt="HolidayCoffeeCake" href="#p1">
+
+        <area shape="poly"
+            coords="751,259,724,284,732,391,755,421,819,440,903,451,932,411,950,449,1012,442,1059,421,1070,395,1076,298,1054,264,979,241,893,233,812,241"
+            alt="TripleChocolateCake" href="#p2">
+
+        <area shape="poly"
+            coords="399,478,383,513,407,624,466,652,547,664,665,661,754,640,798,606,810,491,788,466,704,443,600,433,527,440,450,451"
+            alt="AppleBerryCake" href="#p3">
+
+        <area shape="poly" coords="999,474,1031,453,1078,453,1115,468,1092,587,1053,597,1014,583" alt="JustACoffee"
+            href="#p4">
+    </map>
+
+    <section id="p1">
+        <h1>This is a Holiday Coffee Cake</h1>
+        <p>Whoops! you got caught in a Lie!</p>
+        <br>
+    </section>
+    <section id="p2">
+        <h1>This is a Triple Chocolate Cake</h1>
+        <p>Hooray! you found the Truth!</p>
+        <br>
+    </section>
+    <section id="p3">
+        <h1>This is a Apple Berry Cake</h1>
+        <p>Whoops! you got caught in a Lie!</p>
+        <br>
+    </section>
+    <section id="p4">
+        <h1>This is just a Coffee</h1>
+        <p>WOAH! you found a secret!</p>
+        <br>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rayshawn Villanueva. All rights reserved.</p>
+    </footer>
+</body>
+</html>
